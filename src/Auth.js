@@ -6,7 +6,7 @@ import {
   signOut,
 } from "firebase/auth";
 import "./App.css";
-import { auth } from "./firebase";
+import { auth } from "./firebase-config";
 
 function App() {
   const [registerEmail, setRegisterEmail] = useState("");
@@ -52,11 +52,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className="nav">
-      <h3> #LOGO# </h3>
-      </div>
       <div>
-        <h3> 회원가입 </h3>
+        <h3> Register User </h3>
         <input
           placeholder="Email..."
           onChange={(event) => {
@@ -70,11 +67,11 @@ function App() {
           }}
         />
 
-        <button onClick={register}> 회원가입</button>
+        <button onClick={register}> Create User</button>
       </div>
 
       <div>
-        <h3> 로그인 </h3>
+        <h3> Login </h3>
         <input
           placeholder="Email..."
           onChange={(event) => {
@@ -88,13 +85,13 @@ function App() {
           }}
         />
 
-        <button onClick={login}> 로그인</button>
+        <button onClick={login}> Login</button>
       </div>
 
-      <h4> 로그인 계정: </h4>
+      <h4> User Logged In: </h4>
       {user?.email}
 
-      <button onClick={logout}> 로그아웃 </button>
+      <button onClick={logout}> Sign Out </button>
     </div>
   );
 }

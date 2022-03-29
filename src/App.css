@@ -6,11 +6,10 @@ body {
   'nanumsqure';
 }
 .nav {
-  background: whitesmoke;
+  background: white;
   width: 100%;
   display: flex;
   color: black;
-  padding: 20px;
   font-weight: 600;
   font-size: 20px;
 }

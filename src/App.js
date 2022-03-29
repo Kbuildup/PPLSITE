@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <div className="nav">
-      <h3> #LOGO# </h3>
+      <h5> #LOGO# </h5>
       </div>
       <div>
         <h3> 회원가입 </h3>
